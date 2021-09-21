@@ -26,6 +26,14 @@ namespace Loop_Participation
 
             while (guessNumber != randValue)
             {
+                if (guessNumber > randValue)
+                {
+                    Console.WriteLine("Guessed too high.");
+                }
+                else
+                {
+                    Console.WriteLine("Guessed too low.");
+                }
                 Console.WriteLine("Guessed Incorrectly. Guess agian.");
                 string newguess = Console.ReadLine();
                 guessNumber = Convert.ToInt32(newguess);
